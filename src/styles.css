@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+div {
+  background-color: #fff;
+  max-width: 300px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  user-select: none;
+}
+
+label {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+  display: block;
+}
+
+button {
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 12px 0;
+  flex: 1 1 50px;
+  margin: 8px 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(74, 144, 226, 0.4);
+  transition: background-color 0.3s ease, transform 0.15s ease;
+}
+
+button:hover {
+  background-color: #357abd;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+div > button {
+  display: inline-block;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button:nth-child(4) {
+  flex-basis: 100%;
+  max-width: 280px;
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  div {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  button {
+    font-size: 1.1rem;
+    padding: 14px 0;
+    margin: 8px 8px;
+    flex-basis: 22%;
+    min-width: 50px;
+  }
+
+  button:nth-child(4) {
+    max-width: 100%;
+  }
+}
