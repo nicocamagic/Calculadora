@@ -30,7 +30,7 @@ const Contador = () => {
 
   return (
     <div>
-      <label>Contador: {signo || "0"}</label>
+      <label>Resultado: {signo || "0"}</label>
       <br />
       <br />
       <br />
